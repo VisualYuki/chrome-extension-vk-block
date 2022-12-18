@@ -1,0 +1,21 @@
+{
+	"name": "Настройка вконтакте под себя.",
+	"description": "Блокировка рекламы и некоторых блоков контента во вконтакте.",
+	"version": "0.1.0",
+	"manifest_version": 3,
+	"icons": {
+		"48": "src/img/vk.png"
+	},
+	"permissions": ["storage"],
+	"action": {
+		"default_popup": "src/html/popup.html"
+	},
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["src/js/index.js"],
+			"css": ["src/css/index.css"],
+			"run_at": "document_end"
+		}
+	]
+}
