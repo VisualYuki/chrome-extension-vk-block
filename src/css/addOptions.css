@@ -1,0 +1,5 @@
+.copy-post-block-label-enable .post_copy {
+  position: absolute !important;
+  top: -9999px;
+  left: -9999px;
+}

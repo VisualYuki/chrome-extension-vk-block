@@ -1,0 +1,5 @@
+@import "./help.scss";
+
+.copy-post-block-label-enable .post_copy {
+	@include hide;
+}

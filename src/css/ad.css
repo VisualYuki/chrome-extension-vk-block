@@ -1,0 +1,15 @@
+.ad-block-label-enable #ads_left {
+  position: absolute !important;
+  top: -9999px;
+  left: -9999px;
+}
+.ad-block-label-enable ._ads_block_data_w, .ad-block-label-enable .post_marked_as_ads {
+  position: absolute !important;
+  top: -9999px;
+  left: -9999px;
+}
+.ad-block-label-enable .audio_promo {
+  position: absolute !important;
+  top: -9999px;
+  left: -9999px;
+}

@@ -1,0 +1,10 @@
+.recommendation-block-label-enable .feed_friends_recomm {
+  position: absolute !important;
+  top: -9999px;
+  left: -9999px;
+}
+.recommendation-block-label-enable .feed_groups_recomm {
+  position: absolute !important;
+  top: -9999px;
+  left: -9999px;
+}

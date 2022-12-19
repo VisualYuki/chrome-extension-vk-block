@@ -1,7 +1,8 @@
 {
 	"include": ["src/**/*"],
 	"compilerOptions": {
-		"target": "ES6",
+		"module": "esnext",
+		"target": "es2017",
 		"types": ["chrome"]
 	}
 }

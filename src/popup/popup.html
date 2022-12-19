@@ -6,27 +6,36 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Popup</title>
 		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
-		<link rel="stylesheet" href="../css/popup.css" />
+		<link rel="stylesheet" href="./popup.css" />
 	</head>
 	<body>
 		<main class="p-3">
+			<p class="title">Опции для блокировки.</p>
 			<div class="form-switch d-flex align-items-center mb-2">
 				<input
 					class="form-check-input me-2"
 					type="checkbox"
-					id="ad-label"
+					id="ad-block-label"
 				/>
-				<label for="ad-label">Отключение рекламы.</label>
+				<label for="ad-block-label">Реклама.</label>
 			</div>
 			<div class="form-switch d-flex align-items-center mb-2">
 				<input
 					class="form-check-input me-2"
 					type="checkbox"
-					id="some-label"
+					id="recommendation-block-label"
 				/>
-				<label for="some-label">Отключение some.</label>
+				<label for="recommendation-block-label">Рекомендации.</label>
+			</div>
+			<div class="form-switch d-flex align-items-center mb-2">
+				<input
+					class="form-check-input me-2"
+					type="checkbox"
+					id="copy-post-block-label"
+				/>
+				<label for="copy-post-block-label">Вложеннные посты.</label>
 			</div>
 		</main>
-		<script src="../js/popup.js"></script>
+		<script src="./popup.js"></script>
 	</body>
 </html>

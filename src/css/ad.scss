@@ -1,0 +1,20 @@
+//Блокировка рекламы.
+@import "./help.scss";
+
+.ad-block-label-enable {
+	// all: реклама под списком (друзья, музыка, ...)
+	& #ads_left {
+		@include hide;
+	}
+
+	// news: помеченный как реклама
+	& ._ads_block_data_w,
+	& .post_marked_as_ads {
+		@include hide;
+	}
+
+	// music: страница музыка - реклама
+	& .audio_promo {
+		@include hide;
+	}
+}

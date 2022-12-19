@@ -1,0 +1,15 @@
+// Блокировка рекомендаций
+
+@import "./help.scss";
+
+.recommendation-block-label-enable {
+	// news: возможные друзья
+	& .feed_friends_recomm {
+		@include hide;
+	}
+
+	// news: страница новости. рекомендация групп.
+	& .feed_groups_recomm {
+		@include hide;
+	}
+}
