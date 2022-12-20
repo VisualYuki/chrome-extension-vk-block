@@ -12,4 +12,9 @@
 	& .feed_groups_recomm {
 		@include hide;
 	}
+
+	// news: рекомендации друзей.
+	& #friends_right_blocks_root {
+		@include hide;
+	}
 }

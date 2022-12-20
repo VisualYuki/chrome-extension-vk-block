@@ -8,3 +8,8 @@
   top: -9999px;
   left: -9999px;
 }
+.recommendation-block-label-enable #friends_right_blocks_root {
+  position: absolute !important;
+  top: -9999px;
+  left: -9999px;
+}
