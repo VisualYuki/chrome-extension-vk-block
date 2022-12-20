@@ -28,20 +28,26 @@ function startPage() {
             chrome.storage.local.set({ [prop]: changes[prop].newValue });
         }
     });
-    //const observer = new MutationObserver((mutations) => {
-    //	mutations.forEach(function (mutation) {
-    //		mutation.addedNodes.forEach((item: HTMLElement) => {
-    //			if (item.querySelectorAll(".wall_marked_as_ads").length) {
-    //				item.id = "display-none";
-    //			}
-    //		});
-    //	});
-    //});
-    //observer.observe(document.getElementById("feed_rows"), {
-    //	childList: true,
-    //});
 }
 startPage();
 window.history.pushState = new Proxy(window.history.pushState, {
     apply: () => startPage(),
 });
+//const observer = new MutationObserver((mutations) => {
+//	mutations.forEach(function (mutation) {
+//		mutation.addedNodes.forEach((item: HTMLElement) => {
+//			if (item.querySelectorAll(".wall_marked_as_ads").length) {
+//				item.id = "display-none";
+//			}
+//		});
+//	});
+//});
+//observer.observe(document.getElementById("feed_rows"), {
+//	childList: true,
+//});
+//chrome.tabs.query({ currentWindow: true, active: true }, (result) => {
+//	//chrome.action.disable(result[0].id);
+//	console.log(result);
+//	//chrome.tabs.remove(result[0].id);
+//	//window.close();
+//});

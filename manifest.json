@@ -6,13 +6,16 @@
 	"icons": {
 		"48": "src/img/vk.png"
 	},
-	"permissions": ["storage", "scripting"],
+	"permissions": ["storage", "scripting", "tabs"],
 	"action": {
 		"default_popup": "src/popup/popup.html"
 	},
+	"background": {
+		"service_worker": "src/js/background.js"
+	},
 	"content_scripts": [
 		{
-			"matches": ["*://vk.com/*"],
+			"matches": ["<all_urls>"],
 			"js": ["src/js/index.js"],
 			"css": [
 				"src/css/ad.css",
